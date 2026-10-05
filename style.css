@@ -1,0 +1,100 @@
+	.peralta-regular 
+	{font-family: "Peralta", serif;
+		font-weight: 400;
+		font-style: normal;}
+
+	h1,h2,h3 {font-family: 'Peralta', serif;}
+	h1,h2,h3 {color: white;}
+	h1,h2,h3 {text-align: center;}
+	body {background-color: #ffb3c1}
+	h1 {font-size: 40px;}
+	h2,h3{font-size: 25px;}
+
+	p,p2 {font-family: 'Verdana', sans-serif;}
+	p,p2 {color: #AB274F;}
+	p{text-indent: 2em;}
+	p {
+  padding-top: 5px;
+  padding-right: 20px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+}
+
+	p{font-size: 20px;}
+
+	.p2 {text-align: center;}
+
+
+	footer {font-family: 'Verdana';
+		font-size: 10px;
+	}
+
+	ul{font-family: 'Verdana', sans-serif;}
+		ul{color: #AB274F;}
+	ol{font-family: 'Verdana', sans-serif;}
+		ol{color: #AB274F;}
+
+	ul, ol {
+  padding-left: 60px;
+}	
+
+	nav ul {
+  		list-style: none;
+  		margin: 0;
+ 		 padding: 0;
+  		display: flex;
+  		flex-wrap: wrap;
+  		justify-content: center;
+  		gap: 10px;
+		}
+
+	nav a {
+  		display: inline-block;
+  		padding: 10px 18px;
+  		background-color: #FF91AF;
+ 		 color: white;
+ 		 text-decoration: none;
+  		border-radius: 6px;
+  		font-weight: bold;
+		}
+
+	nav a:hover {
+  		background-color: #AB274F;
+		}
+
+.box {
+  border: 2px solid #AB274F;
+  border-radius: 8px;
+  padding: 10px;
+  width: 45%;
+  margin: 20px auto;
+  background-color: #AB274F;
+  text-align: center;
+}
+
+
+img { border: 3px solid #AB274F;
+padding: 5px;
+margin: 50px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
