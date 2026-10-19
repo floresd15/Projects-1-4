@@ -1,95 +1,145 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<link rel="stylesheet" href="style.css">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Peralta&display=swap" rel="stylesheet">
-		<title>Scheduling Clients </title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!--
+  <!-- Bootstrap first, then your own CSS so yours wins -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Peralta&display=swap" rel="stylesheet">
+  <title>Scheduling Clients</title>
+
+  <!--
 AI Use Disclosure:
 Tool(s): Claude (free version)
-Purpose: Helped explain how to turn my nav into buttons
-Human Role: I applied the explanation to my css, and created buttons connected to the nav. -->
+Purpose: Helped explain how to turn my nav into buttons, and helped add Bootstrap containers, rows, columns, cards, navs, and buttons
+Human Role: I applied the explanation to my css, and created buttons connected to the nav. I reviewed and tested the Bootstrap code. -->
 
-	</head>
 
-	<body>
-<h1>Scheduling Clients</h1>
-<nav>
+<!--
+AI Use Disclosure:
+Tool(s): Claude (free version)
+Purpose: Helped explain Bootstrap grid, container, and button behavior and suggested layout options.
+Human Role: I applied example codes to existing html and css.
+-->
 
-	<ul> 
-		<li> 
-		<a href="index.html">home</a> 
-		</li>
-		<li> 
-		<a href="deciding-availability.html">Deciding Availability</a> 
-		</li>
-		<li>
-		<a href="posting-availability.html">Posting Schedule</a>
-		</li>
-		<li>
-		<a href="answering-messages.html">Answering Messages</a>
-		</li>
-	</ul>
-</nav>
+</head>
 
-	<main>
-		<section>
-		<h2> Find out How Scheduling Clients Work for a Self Employed College Student!
-		</h2>
+<body>
 
-			<p class="p2">Establishing my Availability and Booking Clients</p>
-		
+<div class="container">
 
-	</section>
-	</main>
-	<div class="box">
-<h2>Deciding Availability</h2>
-	</div>
-<ol>
-<li> <b>School Schedule</b>
-	<p>
-		I block out slots meant for classes and extra curriculars. I also block extra time during exam season to study.
-	</p>
-	</li>
-<li><b>Days off</b>
-	<p>
-		Making sure I give myself time to rest.
-	</p>
-	</li>
-<li><b>Best for clients</b>
-	<p>
-		Picking times where I am most likely to get booked
-	</p>
-	</li>
-</ol>
+  <!-- Header + Nav -->
+  <h1 class="text-center my-4">Scheduling Clients</h1>
 
-<div class="box">
-<h3>
-	Posting Schedule
-</h3>
+  <nav>
+    <ul class="nav nav-pills justify-content-center gap-2 mb-4">
+      <li class="nav-item">
+        <a class="nav-link active" href="index.html">home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="deciding-availability.html">Deciding Availability</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="posting-availability.html">Posting Schedule</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="answering-messages.html">Answering Messages</a>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="text-center mb-5">
+      <h2>Find out How Scheduling Clients Work for a Self Employed College Student!</h2>
+      <p class="p2">Establishing my Availability and Booking Clients</p>
+      <a href="deciding-availability.html" class="btn btn-primary btn-lg">Get Started</a>
+    </section>
+  </main>
+
+  <!-- Deciding Availability: 3 cards in a row -->
+  <div class="box">
+    <h2>Deciding Availability</h2>
+  </div>
+
+  <div class="row g-4 my-3">
+    <div class="col-12 col-md-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h4 class="card-title">School Schedule</h4>
+          <p class="card-text">
+            I block out slots meant for classes and extra curriculars. I also block extra time during exam season to study.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h4 class="card-title">Days off</h4>
+          <p class="card-text">Making sure I give myself time to rest.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h4 class="card-title">Best for clients</h4>
+          <p class="card-text">Picking times where I am most likely to get booked</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Posting Schedule: text + image side by side -->
+  <div class="box">
+    <h3>Posting Schedule</h3>
+  </div>
+
+  <div class="row align-items-center g-4 my-3">
+    <div class="col-12 col-md-7">
+      <p>
+        I post my availability every <b>2 weeks</b> on Sundays On Instagram. 24 hours before my schedule goes live, I send out a countdown so clients are prepared to book.
+      </p>
+      <a href="posting-availability.html" class="btn btn-outline-primary">See Posting Schedule</a>
+    </div>
+    <div class="col-12 col-md-5 text-center">
+      <img src="images/sept-availability.JPG" alt="example of september schedule from the 18th-30th" class="img-fluid" style="max-width: 250px;">
+    </div>
+  </div>
+
+  <!-- Answering Messages: image + text side by side -->
+  <div class="box">
+    <h3>Answering Messages</h3>
+  </div>
+
+  <div class="row align-items-center g-4 my-3">
+    <div class="col-12 col-md-5 text-center order-2 order-md-1">
+      <img src="images/appointmentmessage.jpg" alt="example of a client booking a nail appointment" class="img-fluid" style="max-width: 300px;">
+    </div>
+    <div class="col-12 col-md-7 order-1 order-md-2">
+      <p>
+        I answer messages first come first style. I make sure that the date they want is available, then I give them a set price and request a <strong>deposit fee to secure their spot</strong>. Once that is sent I give them my address. A day before the appointment I send out a message confirming their presence.
+      </p>
+      <a href="answering-messages.html" class="btn btn-success">Learn More</a>
+    </div>
+  </div>
+
+  <footer class="text-center py-4 border-top mt-4">
+    © 2026 Scheduling Clients<br>
+    Created by Daniella Flores-Kendall
+  </footer>
+
 </div>
-<p> 
-	I post my availability every <b>2 weeks</b> on Sundays On Instagram. 24 hours before my schedule goes live, I send out a countdown so clients are prepared to book.
-</p>
 
-<img src="images/sept-availability.JPG" alt="example of september schedule from the 18th-30th" width="250" >
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-<div class="box">
-<h3>Answering Messages</h3>
-</div>
-
-<p>
-I answer messages first come first style. I make sure that the date they want is available, then I give them a set price and request a <strong>deposit fee to secure their spot</strong>. Once that is sent I give them my address. A day before the appointment I send out a message confirming their presence. 
-</p>
-
-<img src="images/appointmentmessage.jpg" alt="example of a client booking a nail appointment" width="300">
-
-<footer>
-© 2026 Scheduling Clients
-Created by Daniella Flores-Kendall
-</footer>
-	</body>
+<!-- LOAD BOOTSTRAP JAVASCRIPT - DO NOT DELETE -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<!-- END LOADING BOOTSTRAP JAVASCRIPT -->
+</body>
 </html>
