@@ -27,31 +27,48 @@ Purpose: Helped explain Bootstrap grid, container, and button behavior and sugge
 Human Role: I applied example codes to existing html and css.
 -->
 
+<!--
+AI Use Disclosure:
+Tool(s): Claude (free version)
+Purpose: Added code to polish up the end result of the website
+Human Role: Decided what code and element to include.
+-->
+
 </head>
 
 <body>
 
-<div class="container">
+<div class="container" id="top">
 
   <!-- Header + Nav -->
   <h1 class="text-center my-4">Scheduling Clients</h1>
 
-  <nav>
-    <ul class="nav nav-pills justify-content-center gap-2 mb-4">
-      <li class="nav-item">
-        <a class="nav-link active" href="index.html">home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="deciding-availability.html">Deciding Availability</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="posting-availability.html">Posting Schedule</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="answering-messages.html">Answering Messages</a>
-      </li>
-    </ul>
-  </nav>
+<nav class="navbar navbar-expand-md mb-4">
+  <div class="container-fluid">
+    <span class="navbar-brand d-md-none">Menu</span>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav nav-pills mx-auto gap-2">
+        <li class="nav-item">
+          <a class="nav-link active" href="#top">home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#deciding-availability">Deciding Availability</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#posting-schedule">Posting Schedule</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#answering-messages">Answering Messages</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
   <main>
     <section class="text-center mb-5">
@@ -62,7 +79,7 @@ Human Role: I applied example codes to existing html and css.
   </main>
 
   <!-- Deciding Availability: 3 cards in a row -->
-  <div class="box">
+  <div class="box" id="deciding-availability">
     <h2>Deciding Availability</h2>
   </div>
 
@@ -70,7 +87,7 @@ Human Role: I applied example codes to existing html and css.
     <div class="col-12 col-md-4">
       <div class="card h-100">
         <div class="card-body">
-          <h4 class="card-title">School Schedule</h4>
+          <h3 class="card-title">School Schedule</h3>
           <p class="card-text">
             I block out slots meant for classes and extra curriculars. I also block extra time during exam season to study.
           </p>
@@ -80,7 +97,7 @@ Human Role: I applied example codes to existing html and css.
     <div class="col-12 col-md-4">
       <div class="card h-100">
         <div class="card-body">
-          <h4 class="card-title">Days off</h4>
+          <h3 class="card-title">Days off</h3>
           <p class="card-text">Making sure I give myself time to rest.</p>
         </div>
       </div>
@@ -88,7 +105,7 @@ Human Role: I applied example codes to existing html and css.
     <div class="col-12 col-md-4">
       <div class="card h-100">
         <div class="card-body">
-          <h4 class="card-title">Best for clients</h4>
+          <h3 class="card-title">Best for clients</h3>
           <p class="card-text">Picking times where I am most likely to get booked</p>
         </div>
       </div>
@@ -96,8 +113,8 @@ Human Role: I applied example codes to existing html and css.
   </div>
 
   <!-- Posting Schedule: text + image side by side -->
-  <div class="box">
-    <h3>Posting Schedule</h3>
+  <div class="box" id="posting-schedule">
+    <h2>Posting Schedule</h2>
   </div>
 
   <div class="row align-items-center g-4 my-3">
@@ -105,26 +122,29 @@ Human Role: I applied example codes to existing html and css.
       <p>
         I post my availability every <b>2 weeks</b> on Sundays On Instagram. 24 hours before my schedule goes live, I send out a countdown so clients are prepared to book.
       </p>
-      <a href="posting-availability.html" class="btn btn-outline-primary">See Posting Schedule</a>
+      <a href="posting-availability.html" class="btn btn-success">See Posting Schedule</a>
     </div>
     <div class="col-12 col-md-5 text-center">
-      <img src="images/sept-availability.JPG" alt="example of september schedule from the 18th-30th" class="img-fluid" style="max-width: 250px;">
+      <img src="images/sept-availability.JPG" alt="example of september schedule from the 18th-30th" class="img-fluid">
     </div>
   </div>
 
   <!-- Answering Messages: image + text side by side -->
-  <div class="box">
-    <h3>Answering Messages</h3>
+  <div class="box" id="answering-messages">
+    <h2>Answering Messages</h2>
   </div>
 
   <div class="row align-items-center g-4 my-3">
     <div class="col-12 col-md-5 text-center order-2 order-md-1">
-      <img src="images/appointmentmessage.jpg" alt="example of a client booking a nail appointment" class="img-fluid" style="max-width: 300px;">
+      <img src="images/appointmentmessage.jpg" alt="example of a client booking a nail appointment" class="img-fluid">
     </div>
     <div class="col-12 col-md-7 order-1 order-md-2">
-      <p>
-        I answer messages first come first style. I make sure that the date they want is available, then I give them a set price and request a <strong>deposit fee to secure their spot</strong>. Once that is sent I give them my address. A day before the appointment I send out a message confirming their presence.
-      </p>
+      <p class="d-md-none">
+  I answer messages first come first served. I confirm the date, send a price, and request a <strong>deposit to secure the spot</strong>.
+</p>
+<p class="d-none d-md-block">
+  I answer messages first come first style. I make sure that the date they want is available, then I give them a set price and request a <strong>deposit fee to secure their spot</strong>. Once that is sent I give them my address. A day before the appointment I send out a message confirming their presence.
+</p>
       <a href="answering-messages.html" class="btn btn-success">Learn More</a>
     </div>
   </div>
@@ -141,5 +161,15 @@ Human Role: I applied example codes to existing html and css.
 <!-- LOAD BOOTSTRAP JAVASCRIPT - DO NOT DELETE -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 <!-- END LOADING BOOTSTRAP JAVASCRIPT -->
+<script>
+  const mainNav = document.getElementById('mainNav');
+  document.querySelectorAll('#mainNav .nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+      if (mainNav.classList.contains('show')) {
+        bootstrap.Collapse.getOrCreateInstance(mainNav).hide();
+      }
+    });
+  });
+</script>
 </body>
 </html>
